@@ -1,0 +1,29 @@
+@use 'colors';
+
+$font-stack: system-ui, sans-serif;
+$max-width: 60rem;
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  color: colors.$text-color;
+  background-color: #fafafa;
+}
+
+main {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  h1 {
+    color: colors.$accent-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    color: colors.$accent-color;
+  }
+}

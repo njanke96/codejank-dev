@@ -3,6 +3,8 @@ import { defineConfig } from 'vitest/config';
 import { playwright } from '@vitest/browser-playwright';
 import adapter from '@sveltejs/adapter-static';
 import { sveltekit } from '@sveltejs/kit/vite';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import path from 'node:path';
 
 export default defineConfig({
   plugins: [
@@ -19,10 +21,17 @@ export default defineConfig({
         precompress: false,
         strict: true
       }),
-      preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
+      preprocess: [vitePreprocess(), mdsvex({ extensions: ['.svx', '.md'] })],
       extensions: ['.svelte', '.svx', '.md']
     })
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        loadPaths: [path.resolve('./src/styles')]
+      }
+    }
+  },
   test: {
     expect: { requireAssertions: true },
     projects: [

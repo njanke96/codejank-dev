@@ -21,7 +21,17 @@ export default defineConfig({
         precompress: false,
         strict: true
       }),
-      preprocess: [vitePreprocess(), mdsvex({ extensions: ['.svx', '.md'] })],
+      preprocess: [
+        vitePreprocess(),
+        mdsvex({
+          extensions: ['.svx', '.md'],
+          layoutPropForwarding: 'runes',
+          layout: {
+            // https://github.com/pngwn/MDsveX/issues/720#issuecomment-2840222300
+            posts: import.meta.dirname + '/src/lib/md-layouts/posts.svelte'
+          }
+        })
+      ],
       extensions: ['.svelte', '.svx', '.md']
     })
   ],

@@ -1,29 +1,49 @@
 @use 'colors';
-
-$font-stack: system-ui, sans-serif;
-$max-width: 60rem;
+@use 'layout';
+@use 'typography';
 
 body {
   margin: 0;
-  font-family: $font-stack;
-  color: colors.$text-color;
-  background-color: #fafafa;
+  font-family: typography.$font-family;
+  color: colors.$text;
+  background: colors.$background;
+}
+
+div.outer {
+  max-width: layout.$body-max-width;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 main {
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-
-  h1 {
-    color: colors.$accent-color;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: colors.$text-brighter;
   }
 
   a {
-    color: colors.$accent-color;
+    color: colors.$accent;
+
+    &:visited {
+      color: colors.$accent-alt;
+    }
+  }
+
+  blockquote {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    border-left: 0.25rem solid colors.$background-brighter;
+  }
+}
+
+pre[class*='language-'],
+code {
+  font-size: typography.$font-size-base;
+  background: colors.$background-brighter;
+
+  &:not(code[class*='language-']) {
+    color: colors.$text-brighter;
   }
 }

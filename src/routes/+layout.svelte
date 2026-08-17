@@ -10,6 +10,8 @@
   <title>codejank</title>
 </svelte:head>
 
-<main>
-  {@render children()}
-</main>
+<div class="outer">
+  <main>
+    {@render children()}
+  </main>
+</div>

@@ -1,10 +1,9 @@
 ---
 title: 'My Dumb Post'
+summary: 'This is just a dumb post.'
 date: '2026-04-20T16:20:00Z'
 layout: posts
 ---
-
-This is the intro of my dumb post.
 
 ## Text formatting
 

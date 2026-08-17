@@ -1,6 +1,8 @@
 <script lang="ts">
   /* eslint svelte/no-navigation-without-resolve: "off" */
 
+  import { formatDate, parseDate } from '$lib/time';
+
   interface PostData {
     /** Post title (define in front matter) */
     title: string;
@@ -21,8 +23,12 @@
   });
 </script>
 
+<h1>Posts</h1>
+
 <ul>
   {#each posts as post (post.href)}
-    <li><a href={post.href}>{post.title}</a></li>
+    <li>
+      <a href={post.href}>{formatDate(parseDate(post.date))}: {post.title}</a>
+    </li>
   {/each}
 </ul>

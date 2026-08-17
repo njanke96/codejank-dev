@@ -3,13 +3,12 @@
 @use 'typography';
 
 body {
-  margin: 0;
   font-family: typography.$font-family;
   color: colors.$text;
   background: colors.$background;
-}
-
-div.outer {
+  display: flex;
+  flex-direction: column;
+  min-height: 90dvh;
   max-width: layout.$body-max-width;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -23,18 +22,20 @@ main {
     color: colors.$text-brighter;
   }
 
-  a {
-    color: colors.$accent;
-
-    &:visited {
-      color: colors.$accent-alt;
-    }
-  }
-
   blockquote {
     margin: 1rem 0;
     padding: 0 1rem;
     border-left: 0.25rem solid colors.$background-brighter;
+  }
+
+  flex: 1;
+}
+
+a {
+  color: colors.$accent;
+
+  &:visited {
+    color: colors.$accent-alt;
   }
 }
 

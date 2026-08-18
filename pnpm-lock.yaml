@@ -142,6 +142,9 @@ importers:
       globals:
         specifier: ^17.6.0
         version: 17.11.0
+      husky:
+        specifier: ^9.1.7
+        version: 9.1.7
       mdsvex:
         specifier: ^0.12.7
         version: 0.12.8(svelte@5.56.9(@typescript-eslint/types@8.67.0))
@@ -854,6 +857,11 @@ packages:
   globals@17.11.0:
     resolution: {integrity: sha512-Z2I8hM+PbJDXQDq3Icgpzv+mPdwr68iZUU9d5WW4FuXfDUQfkZaZuvjMv42/5crNyw154+9+VWXbYrUgDXbxNw==}
     engines: {node: '>=18'}
+
+  husky@9.1.7:
+    resolution: {integrity: sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
@@ -2046,6 +2054,8 @@ snapshots:
   globals@16.5.0: {}
 
   globals@17.11.0: {}
+
+  husky@9.1.7: {}
 
   ignore@5.3.2: {}
 

@@ -1,3 +1,5 @@
+import type { PostData } from '$lib/posts';
+
 export async function load() {
   const postModules = import.meta.glob('./*/*.md', { eager: true });
 
@@ -7,5 +9,5 @@ export async function load() {
     return { href, ...metadata };
   });
 
-  return { posts };
+  return { posts } as { posts: PostData[] };
 }

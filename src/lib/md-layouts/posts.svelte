@@ -3,16 +3,11 @@
 
   import { resolve } from '$app/paths';
   import { formatDate, parseDate } from '$lib/time';
+  import type { PostData } from '$lib/posts';
 
-  interface Props {
-    // frontmatter
-    title: string;
-    date: string;
-    summary: string;
-
-    // not frontmatter
+  type Props = {
     children: Snippet;
-  }
+  } & PostData;
 
   let { title, date, summary, children }: Props = $props();
 </script>

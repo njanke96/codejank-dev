@@ -14,7 +14,7 @@
   .site-logo {
     a {
       font-size: 3.5rem;
-      font-family: 'Courier', monospace, sans-serif;
+      font-family: 'Liberation Mono', 'Courier New', Courier, monospace, sans-serif;
       margin-top: 0;
       margin-bottom: 0;
       color: colors.$text-brighter;

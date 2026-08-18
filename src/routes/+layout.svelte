@@ -1,6 +1,6 @@
 <script lang="ts">
   import '../app.scss';
-  import favicon from '$lib/assets/favicon.svg';
+  import favicon from '$lib/assets/favicon.ico';
   import Footer from '$lib/components/Footer.svelte';
   import Navigation from '$lib/components/Navigation.svelte';
   import SiteLogo from '$lib/components/SiteLogo.svelte';

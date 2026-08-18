@@ -12,6 +12,10 @@
   let { title, date, summary, children }: Props = $props();
 </script>
 
+<svelte:head>
+  <title>{title} - codejank</title>
+</svelte:head>
+
 <a href={resolve('/posts')}>&#8592; Back to posts</a>
 
 <div class="post-title-container">

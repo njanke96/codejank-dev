@@ -41,9 +41,12 @@ The website source is available [here](https://codeberg.org/njanke96/codejank-de
 
 ### Style
 
-I don't like designing websites. I'm not good at it. I like websites that load fast and look good
-enough. I think this website's design is a reflection of that.
+I don't like designing fancy websites. I'm not good at it.
+I like websites that load fast and look good enough.
+I think this website's design is a reflection of that.
 
 ## Email
 
-Who doesn't want an email with their own domain. It looks cool.
+Who doesn't want an email with their own domain. The Gmail address I've been using since I learned
+to set it up has become a nearly irredeemable wasteland of marketing and spam.
+It's nice to start fresh.

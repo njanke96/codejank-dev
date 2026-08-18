@@ -8,6 +8,9 @@ export interface PostData {
   /** Post short summary, shown as a subtitle */
   summary?: string;
 
+  /** Post last-updated ISO date */
+  updated?: string;
+
   /** Short post summary */
 
   // Not defined in front matter:

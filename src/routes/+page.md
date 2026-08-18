@@ -1,3 +1,7 @@
+---
+layout: content
+---
+
 # Hello
 
 My name is Nathan Janke. This is a personal website for me to post about things that interest me.

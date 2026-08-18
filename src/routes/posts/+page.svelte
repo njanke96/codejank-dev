@@ -7,6 +7,10 @@
   let { data }: PageProps = $props();
 </script>
 
+<svelte:head>
+  <title>Posts - codejank</title>
+</svelte:head>
+
 <h1>Posts</h1>
 
 <ul>

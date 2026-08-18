@@ -28,7 +28,8 @@ export default defineConfig({
           layoutPropForwarding: 'runes',
           layout: {
             // https://github.com/pngwn/MDsveX/issues/720#issuecomment-2840222300
-            posts: import.meta.dirname + '/src/lib/md-layouts/posts.svelte'
+            posts: import.meta.dirname + '/src/lib/md-layouts/posts.svelte',
+            content: import.meta.dirname + '/src/lib/md-layouts/content.svelte'
           }
         })
       ],

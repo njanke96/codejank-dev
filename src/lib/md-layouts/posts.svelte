@@ -37,7 +37,7 @@
     align-items: start;
     margin-top: spacing.$md;
 
-    @media screen and (width < breakpoints.$xs) {
+    @include breakpoints.xs {
       flex-direction: column-reverse;
     }
 

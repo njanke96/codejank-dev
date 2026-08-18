@@ -26,6 +26,5 @@
     }
 
     user-select: none;
-    margin-bottom: spacing.$md;
   }
 </style>

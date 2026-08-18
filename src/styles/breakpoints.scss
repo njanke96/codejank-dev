@@ -1,1 +1,7 @@
 $xs: 576px;
+
+@mixin xs {
+  @media screen and (width < $xs) {
+    @content;
+  }
+}

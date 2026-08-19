@@ -12,4 +12,3 @@ I am located on Vancouver Island, which is in British Columbia, Canada.
 
 - [GitHub](https://github.com/njanke96)
 - [Codeberg](https://codeberg.org/njanke96)
-- [Bluesky](https://bsky.app/profile/njanke.bsky.social)

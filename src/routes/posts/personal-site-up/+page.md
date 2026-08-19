@@ -17,7 +17,7 @@ The website is built with [SvelteKit](https://svelte.dev/) and [mdsvex](https://
 I write posts in Markdown and links to each post are automatically generated on the [posts](/posts) page.
 The site is fully [statically generated](https://svelte.dev/docs/kit/adapter-static) at build-time.
 I like being able to host it anywhere as easily as possible, and I don't want to deal with
-SSR/CSR/Hydration or any of that nonsense -- I deal with that stuff enough at work!
+SSR/Hydration or any of that nonsense. I deal with that stuff enough at work!
 
 Here is the block of code that runs to populate the [posts](/posts) page, because I want to see how code blocks look:
 
@@ -42,11 +42,10 @@ The website source is available [here](https://codeberg.org/njanke96/codejank-de
 ### Style
 
 I don't like designing fancy websites. I'm not good at it.
-I like websites that load fast and look good enough.
+I like websites that look fine and that display the content instantly without flashy animations.
 I think this website's design is a reflection of that.
 
 ## Email
 
-Who doesn't want an email with their own domain. The Gmail address I've been using since I learned
-to set it up has become a nearly irredeemable wasteland of marketing and spam.
-It's nice to start fresh.
+I like the idea of having an email that's exclusively for talking to other humans. It's nice
+to start fresh.

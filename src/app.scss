@@ -38,13 +38,3 @@ a {
     color: colors.$accent-alt;
   }
 }
-
-pre[class*='language-'],
-code {
-  font-size: typography.$font-size-base;
-  background: colors.$background-brighter;
-
-  &:not(code[class*='language-']) {
-    color: colors.$text-brighter;
-  }
-}

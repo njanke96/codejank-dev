@@ -4,8 +4,8 @@
 
 <div class="navigation-wrapper">
   <a href={resolve('/')}>Home</a>
-  <a href={resolve('/posts')}>Posts</a>
-  <a href={resolve('/contact')}>Contact</a>
+  <a href={resolve('posts')}>Posts</a>
+  <a href={resolve('contact')}>Contact</a>
 </div>
 
 <style lang="scss">

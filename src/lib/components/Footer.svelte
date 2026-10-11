@@ -1,6 +1,6 @@
 <script lang="ts">
-  import codeberg from '$lib/assets/codeberg.svg';
-  import githubWhite from '$lib/assets/github-white.svg';
+  import codeberg from '#lib/assets/codeberg.svg';
+  import githubWhite from '#lib/assets/github-white.svg';
 </script>
 
 <footer class="footer">

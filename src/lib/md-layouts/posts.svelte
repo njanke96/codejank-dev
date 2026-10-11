@@ -2,8 +2,8 @@
   import type { Snippet } from 'svelte';
 
   import { resolve } from '$app/paths';
-  import { formatDate, parseDate } from '$lib/time';
-  import type { PostData } from '$lib/posts';
+  import { formatDate, parseDate } from '#lib/time.ts';
+  import type { PostData } from '#lib/posts.ts';
 
   type Props = {
     children: Snippet;
@@ -12,11 +12,8 @@
   let { title, date, summary, children }: Props = $props();
 </script>
 
-<svelte:head>
-  <title>{title} - codejank</title>
-</svelte:head>
-
-<a href={resolve('/posts')}>&#8592; Back to posts</a>
+<svelte:head><title>{title} - codejank</title></svelte:head>
+<a href={resolve('posts')}>← Back to posts</a>
 
 <div class="post-title-container">
   <div class="post-title-and-summary">

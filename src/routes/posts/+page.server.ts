@@ -1,4 +1,4 @@
-import type { PostData } from '$lib/posts';
+import type { PostData } from '#lib/posts.ts';
 
 export async function load() {
   const postModules = import.meta.glob('./*/*.md', { eager: true });

@@ -1,7 +1,7 @@
 <script lang="ts">
   /* eslint svelte/no-navigation-without-resolve: "off" */
 
-  import { formatDate, parseDate } from '$lib/time';
+  import { formatDate, parseDate } from '#lib/time.ts';
   import type { PageProps } from './$types';
 
   let { data }: PageProps = $props();
